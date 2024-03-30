@@ -1,0 +1,16 @@
+{
+    "name": "Calculator",
+    "short_name": "Calc",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/iOSCalc_Replacer",
+    "start_url": "/iOSCalc_Replacer",
+    "icons": [
+        {
+            "src": "./favicon.png",
+            "sizes": "128x128"
+        }
+    ]
+}
