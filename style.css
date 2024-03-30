@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    background-color: #effbf1;
+  }
+  
+  body .calculator {
+    width: 96%;
+    height: 98%;
+    border-radius: 30px;
+    background-color: #d2eed8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 2%;
+  }
+  body .calculator .showcase {
+    width: 94%;
+    height: 11%;
+    border-radius: 30px;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #c8dace;
+    display: grid;
+    justify-content: right;
+    place-items: center;
+  }
+  body .calculator .showcase p {
+    font-size: 96px;
+    color: 193741;
+    font-family: "Consolas", serif;
+    margin-right: 30px;
+  }
+  body .calculator .math {
+    width: 94%;
+    height: 10%;
+    font-family: "Consolas", serif;
+    font-size: 40px;
+    background-color: #505050;
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: 300ms;
+    position: absolute;
+    bottom: 13%;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  body .calculator .math ul {
+    list-style-type: none;
+    width: 94%;
+    height: 70%;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    gap: 1.5em;
+  }
+  body .calculator .math ul li {
+    display: grid;
+    color: white;
+    place-items: center;
+    width: 100%;
+    transition: 300ms;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #202020;
+  }
+  body .calculator .math ul li:hover {
+    background-color: #404040;
+  }
+  body .calculator .buttons {
+    font-family: "Consolas", serif;
+    width: 94%;
+    height: 30%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 600%;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+  }
+  body .calculator .buttons ul {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    margin-right: -3%;
+    margin-left:3%;
+    gap: 0.3em;
+  }
+  body .calculator .buttons ul li {
+    display: grid;
+    color: #effbf1;
+    place-items: center;
+    width: 100%;
+    padding-bottom: 1%;
+    transition: 300ms;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #588184;
+  }
+  body .calculator .buttons ul #delete {
+    padding-top:1%;
+    background-color: #f23e3e;
+    color: #fdebeb;
+  }
+  body .calculator .buttons ul li:hover {
+    background-color: #404040;
+  }
+  body .calculator .buttons ul #delete:hover {
+    color: rgba(223, 122, 122, 0.88);
+  }
+  body .calculator .buttons ul #ac:hover {
+    color: rgb(75, 188, 129);
+  }
+  body .calculator .numbers {
+    width: 100%;
+    margin-top: 3%;
+    height: 80%;
+  }
+  body .calculator .numbers ul {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 75%;
+    gap: 0.3em;
+  }
+  body .calculator .numbers ul li {
+    cursor: pointer;
+    transition: 300ms;
+    display: grid;
+    color: #effbf1;
+    place-items: center;
+    width: 30%;
+    height: 0;
+    padding-bottom: 30%;
+    border-radius: 30px;
+    background-color: #7ea996;
+  }
+  body .calculator .numbers ul li:hover {
+    background-color: #404040;
+  }
+  body .calculator .symbols {
+    width: 22.37%;
+    float: right;
+    margin-right: -3%;
+  }
+  body .calculator .symbols ul {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 0.3em;
+    margin-top: 14%;
+  }
+  body .calculator .symbols ul li {
+    cursor: pointer;
+    transition: 300ms;
+    display: grid;
+    color: #effbf1;
+    place-items: center;
+    width: 100%;
+    padding-bottom: 100%;
+    height: 0;
+    border-radius: 30px;
+    background-color: #588184;
+  }
+  body .calculator .symbols ul li:hover {
+    background-color: #404040;
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  
