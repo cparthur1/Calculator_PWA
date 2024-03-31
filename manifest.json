@@ -5,8 +5,8 @@
     "background_color": "‎#d2eed8",
     "display": "fullscreen",
     "orientation": "portrait",
-    "scope": "/iOSCalc_Replacer",
-    "start_url": "/iOSCalc_Replacer",
+    "scope": "/calculator_PWA",
+    "start_url": "/calculator_PWA",
     "icons": [
         {
             "src": "./favicon.png",
