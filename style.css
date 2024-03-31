@@ -33,7 +33,7 @@
     justify-content: right;
     place-items: end;
   }
-  body .calculator .showcase p{
+  body .calculator .showcase .p{
     overflow: scroll;
     font-size: 156px;
     color: #193741;
