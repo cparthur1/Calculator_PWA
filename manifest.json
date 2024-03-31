@@ -5,8 +5,8 @@
     "background_color": "‎#d2eed8",
     "display": "fullscreen",
     "orientation": "portrait",
-    "scope": "/calculator_PWA",
-    "start_url": "/calculator_PWA",
+    "scope": "/Calculator_PWA",
+    "start_url": "/Calculator_PWA",
     "icons": [
         {
             "src": "./favicon.png",
