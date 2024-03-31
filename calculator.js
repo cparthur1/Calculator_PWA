@@ -49,15 +49,22 @@ brackets.addEventListener('click', () => {
 calc.addEventListener('click', () => {
     const problem = result.innerHTML;
     let problemAsNumber = Number(problem);
-    let a = eval(problem || null);
-    let c = a.tofixed(4);
-    result.innerHTML = `${c}`;})
+    let b = eval(problem || null);
+    let resultAsNumber = Number(b);
+    if (!isNaN(resultAsNumber)) {
+        let a = resultAsNumber.toFixed(4);
+        result.innerHTML = `${a}`;} 
+    else {console.warn("Expression doesn't evaluate to a number");}});
 sqrd.addEventListener('click', () => {
     const problem = result.innerHTML;
     let problemAsNumber = Number(problem);
-    let a = Math.pow(problem, 2);
-    let c = a.tofixed(4);
-    result.innerHTML = `${c}`;})
+    let a;
+    if (isNaN(problemAsNumber)) {a = "Error: Please enter a valid number";} 
+    else {a = Math.pow(problemAsNumber, 2);
+          console.log("Square:", a);
+          a = a.toFixed(4);
+          console.log("Formatted square:", a);}
+        result.innerHTML = `${a}`;});
 sqrt.addEventListener('click', () => {
     const problem = result.innerHTML;
     let problemAsNumber = Number(problem);
@@ -69,10 +76,9 @@ factorial.addEventListener('click', () => {
     const problem = result.innerHTML;
     let problemAsNumber = Number(problem);
     let a = 1;
-    for(let i = 1; i<=problemAsNumber; i++) {
-        a = (a*i);}
-    let c = a.tofixed(4);
-    result.innerHTML = `${c}`;})
+    for (let i = 1; i <= problemAsNumber; i++) {a *= i;}
+    let c = a.toFixed(4);
+    result.innerHTML = `${c}`;});
 xupn.addEventListener('click', () => {
     let a = prompt('What power of the number do you want to get?');
     let num = Number(a);
