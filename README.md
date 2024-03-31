@@ -1,3 +1,3 @@
 # iOSCalc_Replacer
-Creating a mobile version and modding the skin of the calculator created by hacimertgokhan (his github profile) so I can use as my phone's calculator.
-Preview:https://cparthur1.github.io/iOSCalc_Replacer/
+A mobile PWA of a calculator to use it on my iPhone instead of the default one , which I hate.
+<p>Preview:https://cparthur1.github.io/iOSCalc_Replacer/</p>
