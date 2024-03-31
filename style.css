@@ -9,6 +9,7 @@
   }
   
   body .calculator {
+    touch-action: manipulation;
     width: 96%;
     height: 98%;
     border-radius: 30px;
@@ -181,6 +182,3 @@
   body .calculator .symbols ul li:hover {
     background-color: #404040;
   }
-  
-  /*# sourceMappingURL=style.css.map */
-  
