@@ -20,6 +20,7 @@
   }
   body .calculator .showcase {
     width: auto;
+    position: relative;
     margin: 3%;
     height: 20%;
     border-radius: 30px;
