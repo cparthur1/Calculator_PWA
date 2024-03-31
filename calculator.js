@@ -23,6 +23,7 @@ const minus = document.getElementById('-');
 const multiple = document.getElementById('x');
 const divide = document.getElementById('/');
 const calc = document.getElementById('calculate');
+const history = document.getElementById('history');
 //calculating
 plus.addEventListener('click', () => {result.innerHTML += "+";})
 minus.addEventListener('click', () => {result.innerHTML += "-";})
@@ -53,7 +54,11 @@ calc.addEventListener('click', () => {
     let resultAsNumber = Number(b);
     if (!isNaN(resultAsNumber)) {
         let a = resultAsNumber.toFixed(4);
-        result.innerHTML = `${a}`;} 
+        result.innerHTML = `${a}`;
+        const newDiv = history.createElement("div");
+        newDiv.appendChild(problem + a); 
+        const currentDiv = history.getElementById("header");
+        history.body.insertBefore(currentDiv, newDiv);}
     else {console.warn("Expression doesn't evaluate to a number");}});
 sqrd.addEventListener('click', () => {
     const problem = result.innerHTML;
