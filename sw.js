@@ -6,7 +6,7 @@ self.addEventListener("install", function(event) {
     console.log("Installing web app");
     return caches.open("offline").then(function(cache) {
       console.log("caching index and important routes");
-      return cache.addAll(["/iOSCalc_Replacer/", "/iOSCalc_Replacer/", "/iOSCalc_Replacer/index.html", "/iOSCalc_Replacer/offline.html"]);
+      return cache.addAll(["/Calculator_PWA/", "/Calculator_PWA/", "/Calculator_PWA/index.html", "/Calculator_PWA/offline.html"]);
     });
   };
   
