@@ -32,13 +32,10 @@
     display: grid;
     justify-content: right;
     place-items: end;
-  }
-  body .calculator .showcase .p{
     overflow: scroll;
     font-size: 156px;
     color: #193741;
     font-family: "Consolas", serif;
-    margin-right: 30px;
   }
   body .calculator .math {
     width: 94%;
