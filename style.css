@@ -25,10 +25,11 @@
     width: auto;
     margin-right: 3%;
     margin-left: 3%;
-    height: 20%;
+    height: 23%;
     border-radius: 30px;
+    padding-left: 3%;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 0px;
     margin-bottom: 3%;
     background-color: #c8dace;
     display: grid;
