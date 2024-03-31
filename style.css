@@ -9,7 +9,7 @@
   }
   
   body .calculator {
-    touch-action: manipulation
+    touch-action: manipulation;
     border-radius: 30px;
     background-color: #d2eed8;
     position: fixed;
@@ -21,7 +21,7 @@
   body .calculator .showcase {
     width: auto;
     margin: 3%;
-    height: 23%;
+    height: 20%;
     border-radius: 30px;
     padding-left: 3%;
     background-color: #c8dace;
