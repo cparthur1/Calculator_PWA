@@ -5,19 +5,24 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./favicon.png">
     <link rel="manifest" href="./manifest.json">
-    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
-    <script src="https://kit.fontawesome.com/55460c171b.js" crossorigin="anonymous"></script>
-    <title>Basic Calculator</title>
+    <script>
+        if (!navigator.serviceWorker.controller) {
+            navigator.serviceWorker.register("/sw.js").then(function(reg) {
+                console.log("Service worker has been registered for scope: " + reg.scope);
+            });
+        }
+    </script>
+    <title>Calculator</title>
 </head>
 <body>
     <div class="calculator">
-        <div class="showcase"><p id="showcase"></p></div>
+        <div class="showcase" id="showcase"><p></p></div>
         <div class="buttons">
             <ul>
-                <li id="calculate"><p>=</p></li>
-                <li id="ac"><p>AC</p></li>
+                <li id="sqrt"><p>√</p></li>
                 <li id="brackets"><p>( )</p></li>
-                <li id="delete"><p><i class="fa-solid fa-left-long fa-xl"></i></p></li>
+                <li id="ac"><p>AC</p></li>
+                <li id="delete"><p>↜</p></li>
             </ul>
             <div class="symbols">
                 <ul>
@@ -40,13 +45,13 @@
                     <li id="9"><p>9</p></li>
                     <li id="0"><p>0</p></li>
                     <li id="."><p>.</p></li>
-                    <li id=""><p>,</p></li>
+                    <li id="calculate" style="background-color: #588184;"><p>=</p></li>
                 </ul>
             </div>
         </div>
         <div class="math" id="math">
             <ul>
-                <li id="sqrt"><p>x<sup>2</sup></p></li>
+                <li id="sqrd"><p>x<sup>2</sup></p></li>
                 <li id="xUpN"><p>x<sup>n</sup></p></li>
                 <li id="factorial"><p>x<strong>!</strong></p></li>
             </ul>
