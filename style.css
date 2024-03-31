@@ -22,7 +22,9 @@
     margin: 2%;
   }
   body .calculator .showcase {
-    width: 94%;
+    width: auto;
+    margin-right: 3%;
+    margin-left: 3%;
     height: 20%;
     border-radius: 30px;
     margin: auto;
