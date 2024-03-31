@@ -12,7 +12,7 @@
     touch-action: manipulation
     border-radius: 30px;
     background-color: #d2eed8;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
