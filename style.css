@@ -32,7 +32,7 @@
     display: grid;
     justify-content: right;
     place-items: end;
-    overflow: scroll;
+    overflow-x: scroll;
     font-size: 156px;
     color: #193741;
     font-family: "Consolas", serif;
