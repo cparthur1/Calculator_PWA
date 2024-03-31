@@ -33,7 +33,8 @@
     justify-content: right;
     place-items: end;
   }
-  body .calculator .showcase p {
+  body .calculator .showcase textarea {
+    overflow: scroll;
     font-size: 156px;
     color: #193741;
     font-family: "Consolas", serif;
