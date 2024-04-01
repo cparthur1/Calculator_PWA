@@ -11,16 +11,13 @@ html {
 body .calculator {
   z-index: 2;
   touch-action: manipulation;
-  width: 96%;
-  height: 98%;
+  width: 100%;
+  height: 100%;
+  position:fixed;
   border-radius: 30px;
   background-color: #d2eed8;
   position: absolute;
   top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: 2%;
 }
 body .calculator .showcase {
   width: 94%;
@@ -30,9 +27,6 @@ body .calculator .showcase {
   margin-top: 3%;
   margin-bottom: 3%;
   background-color: #c8dace;
-  display: grid;
-  justify-content: right;
-  place-items: end;
   overflow: scroll;
   font-size: 156px;
   color: #193741;
@@ -182,27 +176,35 @@ body .calculator .symbols ul li:hover {
   background-color: #404040;
 }
 body .history {
-  z-index: 3;
   display: flex;
   position: relative;
-  flex-direction: column;
   width: 94%;
   margin: 3%;
   height: 20%;
   border-radius: 30px;
   padding-left: 3%;
-  background-color: #c8daff;
+  background-color: #c8dace;
   font-size: 156px;
   color: #193741;
   font-family: "Consolas", serif;
+}
+body .history .header {
+  height: 183px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
 }
 body .history .close {
   border-radius: 100%;
   background-color: #193741;
   color: white;
-  width: 20%;
-  padding-left: 3.7%;
+  width: 183px;
+  padding-left: 8%;
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 700px;
+}
+body .history .content {
+  font-size: 60px;
+  margin-top: 190px;
 }
