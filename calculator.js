@@ -24,6 +24,9 @@ const multiple = document.getElementById('x');
 const divide = document.getElementById('/');
 const calc = document.getElementById('calculate');
 const historyContainer = document.getElementById("history");
+const openH = document.getElementById("showcase");
+const closeH = document.getElementById("close");
+const boxH = document.getElementById("box");
 //calculating
 plus.addEventListener('click', () => {result.innerHTML += "+";})
 minus.addEventListener('click', () => {result.innerHTML += "-";})
@@ -128,3 +131,5 @@ xupn.addEventListener('click', () => {
     <p>${d}</p>`;
     newEntry.style.borderWidth = "5px";
     historyContainer.appendChild(newEntry);})
+openH.addEventListener('click', () => {boxH.style.zIndex = 3;})
+closeH.addEventListener('click', () => {boxH.style.zIndex = 1;})
